@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pokenea Filosófico</title>
+    <link rel="stylesheet" href="/css/pokenea.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Pokeneas </h2>
+      <h1><%= name %></h1>
+      <img src="<%= image %>" alt="<%= name %>" />
+      <p><em>"<%= phrase %>"</em></p>
+      <small>ID del contenedor: <%= containerId %></small>
+
+      <div class="button-container">
+        <button onclick="window.location.reload()">Ver otra Pokenea</button>
+      </div>
+    </div>
+  </body>
+</html>

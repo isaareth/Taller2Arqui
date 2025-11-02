@@ -24,8 +24,9 @@ exports.getRandomImageAndPhrase = () => {
   const pokenea = getRandomPokeneaInstance();
 
   return {
+    name: pokenea.getName(),
     image: pokenea.getImage(),
     phrase: pokenea.getPhrase(),
-    containerId: getContainerId()
+    containerId: os.hostname()
   };
 };
